@@ -1,0 +1,241 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{booktabs}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title[Математика ОГЭ]{Математика: подготовка к ОГЭ}
+\subtitle{Алгебра, геометрия, реальная математика}
+\author{Ваше Имя}
+\institute{Школа / Репетитор}
+\date{\today}
+
+\begin{document}
+
+% Титульный слайд
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Содержание
+\begin{frame}{Содержание}
+  \tableofcontents
+\end{frame}
+
+% ========================
+\section{Алгебра}
+% ========================
+
+\begin{frame}{Числа и вычисления}
+  \begin{block}{Свойства степеней}
+    \[ a^m \cdot a^n = a^{m+n}, \quad \frac{a^m}{a^n} = a^{m-n}, \quad (a^m)^n = a^{mn} \]
+    \[ a^{-n} = \frac{1}{a^n}, \quad a^0 = 1 \;(a \neq 0) \]
+  \end{block}
+  \begin{block}{Корни}
+    \[ \sqrt{a \cdot b} = \sqrt{a} \cdot \sqrt{b}, \quad \sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}} \]
+    \[ \sqrt{a^2} = |a| \]
+  \end{block}
+\end{frame}
+
+\begin{frame}{Формулы сокращённого умножения}
+  \begin{block}{Основные формулы}
+    \[ (a+b)^2 = a^2 + 2ab + b^2 \]
+    \[ (a-b)^2 = a^2 - 2ab + b^2 \]
+    \[ a^2 - b^2 = (a-b)(a+b) \]
+    \[ (a+b)^3 = a^3 + 3a^2 b + 3ab^2 + b^3 \]
+    \[ a^3 + b^3 = (a+b)(a^2 - ab + b^2) \]
+    \[ a^3 - b^3 = (a-b)(a^2 + ab + b^2) \]
+  \end{block}
+\end{frame}
+
+\begin{frame}{Линейные и квадратные уравнения}
+  \begin{block}{Линейное уравнение}
+    \[ ax + b = 0 \;\Rightarrow\; x = -\frac{b}{a} \quad (a \neq 0) \]
+  \end{block}
+  \begin{block}{Квадратное уравнение $ax^2+bx+c=0$}
+    \[ D = b^2 - 4ac \]
+    \[ x_{1,2} = \frac{-b \pm \sqrt{D}}{2a} \]
+  \end{block}
+  \begin{alertblock}{Теорема Виета}
+    \[ x_1 + x_2 = -\frac{b}{a}, \quad x_1 \cdot x_2 = \frac{c}{a} \]
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{Неравенства}
+  \begin{block}{Линейные}
+    \[ ax > b \;\Rightarrow\; x > \frac{b}{a} \;(a>0), \quad x < \frac{b}{a} \;(a<0) \]
+  \end{block}
+  \begin{block}{Квадратные}
+    При $a>0$, $ax^2+bx+c>0$:
+    \begin{itemize}
+      \item $D<0$ → решений нет (при $>0$)
+      \item $D=0$ → все $x$, кроме корня
+      \item $D>0$ → $x < x_1$ или $x > x_2$
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Прогрессии}
+  \begin{block}{Арифметическая}
+    \[ a_n = a_1 + (n-1)d \]
+    \[ S_n = \frac{(a_1 + a_n) \cdot n}{2} \]
+  \end{block}
+  \begin{block}{Геометрическая}
+    \[ b_n = b_1 \cdot q^{\,n-1} \]
+    \[ S_n = \frac{b_1 (q^n - 1)}{q - 1} \quad (q \neq 1) \]
+  \end{block}
+\end{frame}
+
+\begin{frame}{Функции и графики}
+  \begin{block}{Линейная: $y = kx + b$}
+    $k$ — угловой коэффициент, $b$ — сдвиг по оси $Oy$
+  \end{block}
+  \begin{block}{Квадратичная: $y = ax^2 + bx + c$}
+    Парабола, вершина: $x_0 = -\dfrac{b}{2a}$
+  \end{block}
+  \begin{block}{Обратная пропорциональность: $y = \dfrac{k}{x}$}
+    Гипербола
+  \end{block}
+\end{frame}
+
+% ========================
+\section{Геометрия}
+% ========================
+
+\begin{frame}{Треугольники}
+  \begin{block}{Площади}
+    \[ S = \frac{1}{2} a h_a \quad\text{(через сторону и высоту)} \]
+    \[ S = \frac{1}{2} a b \sin C \quad\text{(через две стороны и угол)} \]
+    \[ S = \sqrt{p(p-a)(p-b)(p-c)}, \quad p = \frac{a+b+c}{2} \]
+  \end{block}
+  \begin{alertblock}{Теорема Пифагора}
+    В прямоугольном треугольнике: $a^2 + b^2 = c^2$
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{Теоремы синусов и косинусов}
+  \begin{block}{Теорема косинусов}
+    \[ c^2 = a^2 + b^2 - 2ab \cos C \]
+  \end{block}
+  \begin{block}{Теорема синусов}
+    \[ \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R \]
+  \end{block}
+  \begin{itemize}
+    \item $R$ — радиус описанной окружности
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Четырёхугольники}
+  \begin{block}{Параллелограмм}
+    \[ S = a \cdot h_a = ab \sin\alpha \]
+  \end{block}
+  \begin{block}{Трапеция}
+    \[ S = \frac{a + b}{2} \cdot h \]
+  \end{block}
+  \begin{block}{Ромб}
+    \[ S = a h = a^2 \sin\alpha = \frac{d_1 \cdot d_2}{2} \]
+  \end{block}
+\end{frame}
+
+\begin{frame}{Окружность и круг}
+  \begin{block}{Длина окружности и площадь круга}
+    \[ C = 2\pi R, \quad S = \pi R^2 \]
+  \end{block}
+  \begin{block}{Вписанный угол}
+    Вписанный угол равен половине центрального, опирающегося на ту же дугу:
+    \[ \angle_{впис} = \frac{1}{2} \angle_{центр} \]
+  \end{block}
+  \begin{block}{Касательная}
+    Касательная перпендикулярна радиусу, проведённому в точку касания.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Тригонометрия}
+  \begin{block}{Основное тождество}
+    \[ \sin^2\alpha + \cos^2\alpha = 1 \]
+  \end{block}
+  \begin{block}{Значения углов}
+    \begin{center}
+      \begin{tabular}{c|ccccc}
+        $\alpha$ & $0°$ & $30°$ & $45°$ & $60°$ & $90°$ \\
+        \hline
+        $\sin\alpha$ & $0$ & $\frac{1}{2}$ & $\frac{\sqrt2}{2}$ & $\frac{\sqrt3}{2}$ & $1$ \\
+        $\cos\alpha$ & $1$ & $\frac{\sqrt3}{2}$ & $\frac{\sqrt2}{2}$ & $\frac{1}{2}$ & $0$ \\
+        $\tg\alpha$ & $0$ & $\frac{1}{\sqrt3}$ & $1$ & $\sqrt3$ & --- \\
+      \end{tabular}
+    \end{center}
+  \end{block}
+\end{frame}
+
+% ========================
+\section{Реальная математика}
+% ========================
+
+\begin{frame}{Проценты и пропорции}
+  \begin{block}{Проценты}
+    \[ p\% \text{ от } A = A \cdot \frac{p}{100} \]
+    На сколько \% изменилось: $\dfrac{новое - старое}{старое} \cdot 100\%$
+  \end{block}
+  \begin{block}{Пропорция}
+    \[ \frac{a}{b} = \frac{c}{d} \;\Rightarrow\; a d = b c \]
+  \end{block}
+\end{frame}
+
+\begin{frame}{Текстовые задачи}
+  \begin{block}{Движение}
+    \[ S = v t, \quad v = \frac{S}{t} \]
+    При движении навстречу: $v_{сбл} = v_1 + v_2$
+    При движении вдогонку: $v_{сбл} = v_1 - v_2$
+  \end{block}
+  \begin{block}{Работа}
+    \[ A = P \cdot t \]
+    При совместной работе: $\dfrac{1}{t_{общ}} = \dfrac{1}{t_1} + \dfrac{1}{t_2}$
+  \end{block}
+  \begin{block}{Концентрация}
+    \[ \text{конц.} = \frac{m_{вещ}}{m_{раствор}} \cdot 100\% \]
+  \end{block}
+\end{frame}
+
+% ========================
+\section{Итоги}
+% ========================
+
+\begin{frame}{Что важно повторить перед ОГЭ}
+  \begin{enumerate}
+    \item Формулы сокращённого умножения и свойства степеней
+    \item Решение уравнений и неравенств
+    \item Прогрессии и их формулы
+    \item Графики функций
+    \item Площади фигур, теоремы Пифагора, синусов и косинусов
+    \item Окружность, вписанные углы
+    \item Тригонометрическая таблица
+    \item Проценты, пропорции, текстовые задачи
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Полезные советы}
+  \begin{alertblock}{На экзамене}
+    \begin{itemize}
+      \item Внимательно читайте условие
+      \item Проверяйте размерности и знаки
+      \item Сначала решайте простые задания
+      \item Оставляйте время на проверку
+    \end{itemize}
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \Huge \textbf{Удачи на ОГЭ!}
+\end{frame}
+
+\end{document}
