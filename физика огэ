@@ -1,0 +1,219 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{booktabs}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+
+\title[Физика ОГЭ]{Физика: подготовка к ОГЭ}
+\subtitle{Основные темы и формулы}
+\author{Ваше Имя}
+\institute{Школа / Репетитор}
+\date{\today}
+
+\begin{document}
+
+% Титульный слайд
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Содержание
+\begin{frame}{Содержание}
+  \tableofcontents
+\end{frame}
+
+% ========================
+\section{Механика}
+% ========================
+
+\begin{frame}{Кинематика: основные формулы}
+  \begin{block}{Равномерное движение}
+    \[ v = \frac{S}{t}, \quad S = v t, \quad t = \frac{S}{v} \]
+  \end{block}
+  \begin{block}{Равноускоренное движение}
+    \[ v = v_0 + a t, \quad S = v_0 t + \frac{a t^2}{2}, \quad v^2 - v_0^2 = 2 a S \]
+  \end{block}
+  \begin{itemize}
+    \item $v$ — скорость (м/с)
+    \item $S$ — путь (м)
+    \item $a$ — ускорение (м/с$^2$)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Динамика: законы Ньютона}
+  \begin{enumerate}
+    \item \textbf{I закон:} тело покоится или движется равномерно прямолинейно, если сумма сил равна нулю.
+    \item \textbf{II закон:} $\vec{F} = m \vec{a}$
+    \item \textbf{III закон:} $\vec{F}_{12} = -\vec{F}_{21}$
+  \end{enumerate}
+  \begin{block}{Сила тяжести и вес}
+    \[ F_{тяж} = m g, \quad g \approx 9{,}8 \text{ м/с}^2 \]
+  \end{block}
+\end{frame}
+
+\begin{frame}{Импульс. Закон сохранения}
+  \begin{block}{Импульс тела}
+    \[ \vec{p} = m \vec{v} \]
+  \end{block}
+  \begin{block}{Импульс силы}
+    \[ \vec{F} \cdot t = \Delta \vec{p} \]
+  \end{block}
+  \begin{alertblock}{Закон сохранения импульса}
+    В замкнутой системе $\sum \vec{p} = const$
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{Работа, мощность, энергия}
+  \begin{block}{Механическая работа}
+    \[ A = F \cdot S \cdot \cos\alpha \]
+  \end{block}
+  \begin{block}{Мощность}
+    \[ N = \frac{A}{t} = F \cdot v \]
+  \end{block}
+  \begin{block}{Кинетическая и потенциальная энергия}
+    \[ E_k = \frac{m v^2}{2}, \quad E_p = m g h \]
+  \end{block}
+\end{frame}
+
+% ========================
+\section{Тепловые явления}
+% ========================
+
+\begin{frame}{Количество теплоты}
+  \begin{block}{Нагревание / охлаждение}
+    \[ Q = c m \Delta t \]
+  \end{block}
+  \begin{block}{Плавление / кристаллизация}
+    \[ Q = \lambda m \]
+  \end{block}
+  \begin{block}{Парообразование / конденсация}
+    \[ Q = L m \]
+  \end{block}
+  \begin{block}{Сгорание топлива}
+    \[ Q = q m \]
+  \end{block}
+\end{frame}
+
+\begin{frame}{Уравнение теплового баланса}
+  \begin{alertblock}{Основное уравнение}
+    \[ Q_{отд} = Q_{погл} \]
+  \end{alertblock}
+  \begin{itemize}
+    \item $c$ — удельная теплоёмкость, Дж/(кг$\cdot$°C)
+    \item $\lambda$ — удельная теплота плавления, Дж/кг
+    \item $L$ — удельная теплота парообразования, Дж/кг
+    \item $q$ — удельная теплота сгорания, Дж/кг
+  \end{itemize}
+\end{frame}
+
+% ========================
+\section{Электричество}
+% ========================
+
+\begin{frame}{Электрический ток}
+  \begin{block}{Сила тока}
+    \[ I = \frac{q}{t} \]
+  \end{block}
+  \begin{block}{Закон Ома для участка цепи}
+    \[ I = \frac{U}{R} \]
+  \end{block}
+  \begin{block}{Сопротивление проводника}
+    \[ R = \frac{\rho l}{S} \]
+  \end{block}
+\end{frame}
+
+\begin{frame}{Соединения проводников}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Последовательное}
+        \[ I = const \]
+        \[ U = U_1 + U_2 \]
+        \[ R = R_1 + R_2 \]
+      \end{block}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Параллельное}
+        \[ U = const \]
+        \[ I = I_1 + I_2 \]
+        \[ \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} \]
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Работа и мощность тока}
+  \begin{block}{Работа электрического тока}
+    \[ A = U I t \]
+  \end{block}
+  \begin{block}{Мощность}
+    \[ P = U I = \frac{U^2}{R} = I^2 R \]
+  \end{block}
+  \begin{alertblock}{Закон Джоуля—Ленца}
+    \[ Q = I^2 R t \]
+  \end{alertblock}
+\end{frame}
+
+% ========================
+\section{Оптика}
+% ========================
+
+\begin{frame}{Законы отражения и преломления}
+  \begin{block}{Закон отражения}
+    Угол падения = угол отражения. Лучи и нормаль лежат в одной плоскости.
+  \end{block}
+  \begin{block}{Закон преломления}
+    \[ \frac{\sin\alpha}{\sin\gamma} = \frac{n_2}{n_1} = n \]
+  \end{block}
+  \begin{itemize}
+    \item $n$ — показатель преломления
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Формула тонкой линзы}
+  \begin{block}{Основное уравнение}
+    \[ \frac{1}{F} = \frac{1}{d} + \frac{1}{f} \]
+  \end{block}
+  \begin{block}{Оптическая сила линзы}
+    \[ D = \frac{1}{F}, \quad [D] = \text{дптр} \]
+  \end{block}
+  \begin{itemize}
+    \item $F$ — фокусное расстояние
+    \item $d$ — расстояние до предмета
+    \item $f$ — расстояние до изображения
+  \end{itemize}
+\end{frame}
+
+% ========================
+\section{Итоги}
+% ========================
+
+\begin{frame}{Что важно повторить перед ОГЭ}
+  \begin{enumerate}
+    \item Формулы кинематики и динамики
+    \item Уравнение теплового баланса
+    \item Закон Ома, соединения проводников
+    \item Работа и мощность тока
+    \item Законы отражения и преломления
+    \item Построение изображений в линзах
+  \end{enumerate}
+  \vspace{1em}
+  \begin{alertblock}{Совет}
+    Решайте задачи по темам последовательно и обязательно проверяйте размерности!
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}
+  \centering
+  \Huge \textbf{Удачи на ОГЭ!}
+\end{frame}
+
+\end{document}
